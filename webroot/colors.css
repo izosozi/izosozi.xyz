@@ -1,0 +1,220 @@
+:root {
+    --white: #f2eee9;
+    --black: #030507;
+    --denim: #024CAA;
+    --tangerine: #EC8305;
+    --poppy: #80282C;
+    --accent-base: var(--denim);
+    --complement: var(--tangerine);
+    --support: var(--poppy);
+
+    --up-clr: var(--white);
+    --down-clr: var(--black);
+    --brightness-vector: 1;
+
+    --txt-clr: color-mix(in srgb, var(--accent-base), var(--up-clr) 80%);
+    --txt-0: var(--txt-clr);
+    --txt-up-0: var(--txt-clr);
+    --txt-down-0: var(--txt-clr);
+
+    --txt-up-50: color-mix(in srgb, var(--txt-clr), var(--up-clr) 5%);
+    --txt-up-100: color-mix(in srgb, var(--txt-clr), var(--up-clr) 10%);
+    --txt-up-150: color-mix(in srgb, var(--txt-clr), var(--up-clr) 15%);
+    --txt-up-200: color-mix(in srgb, var(--txt-clr), var(--up-clr) 20%);
+    --txt-up-250: color-mix(in srgb, var(--txt-clr), var(--up-clr) 25%);
+    --txt-up-300: color-mix(in srgb, var(--txt-clr), var(--up-clr) 30%);
+    --txt-up-350: color-mix(in srgb, var(--txt-clr), var(--up-clr) 35%);
+    --txt-up-400: color-mix(in srgb, var(--txt-clr), var(--up-clr) 40%);
+    --txt-up-450: color-mix(in srgb, var(--txt-clr), var(--up-clr) 45%);
+    --txt-up-500: color-mix(in srgb, var(--txt-clr), var(--up-clr) 50%);
+    --txt-up-550: color-mix(in srgb, var(--txt-clr), var(--up-clr) 55%);
+    --txt-up-600: color-mix(in srgb, var(--txt-clr), var(--up-clr) 60%);
+    --txt-up-650: color-mix(in srgb, var(--txt-clr), var(--up-clr) 65%);
+    --txt-up-700: color-mix(in srgb, var(--txt-clr), var(--up-clr) 70%);
+    --txt-up-750: color-mix(in srgb, var(--txt-clr), var(--up-clr) 75%);
+    --txt-up-800: color-mix(in srgb, var(--txt-clr), var(--up-clr) 80%);
+    --txt-up-850: color-mix(in srgb, var(--txt-clr), var(--up-clr) 85%);
+    --txt-up-900: color-mix(in srgb, var(--txt-clr), var(--up-clr) 90%);
+    --txt-up-950: color-mix(in srgb, var(--txt-clr), var(--up-clr) 95%);
+
+    --txt-down-50: color-mix(in srgb, var(--txt-clr), var(--down-clr) 5%);
+    --txt-down-100: color-mix(in srgb, var(--txt-clr), var(--down-clr) 10%);
+    --txt-down-150: color-mix(in srgb, var(--txt-clr), var(--down-clr) 15%);
+    --txt-down-200: color-mix(in srgb, var(--txt-clr), var(--down-clr) 20%);
+    --txt-down-250: color-mix(in srgb, var(--txt-clr), var(--down-clr) 25%);
+    --txt-down-300: color-mix(in srgb, var(--txt-clr), var(--down-clr) 30%);
+    --txt-down-350: color-mix(in srgb, var(--txt-clr), var(--down-clr) 35%);
+    --txt-down-400: color-mix(in srgb, var(--txt-clr), var(--down-clr) 40%);
+    --txt-down-450: color-mix(in srgb, var(--txt-clr), var(--down-clr) 45%);
+    --txt-down-500: color-mix(in srgb, var(--txt-clr), var(--down-clr) 50%);
+    --txt-down-550: color-mix(in srgb, var(--txt-clr), var(--down-clr) 55%);
+    --txt-down-600: color-mix(in srgb, var(--txt-clr), var(--down-clr) 60%);
+    --txt-down-650: color-mix(in srgb, var(--txt-clr), var(--down-clr) 65%);
+    --txt-down-700: color-mix(in srgb, var(--txt-clr), var(--down-clr) 70%);
+    --txt-down-750: color-mix(in srgb, var(--txt-clr), var(--down-clr) 75%);
+    --txt-down-800: color-mix(in srgb, var(--txt-clr), var(--down-clr) 80%);
+    --txt-down-850: color-mix(in srgb, var(--txt-clr), var(--down-clr) 85%);
+    --txt-down-900: color-mix(in srgb, var(--txt-clr), var(--down-clr) 90%);
+    --txt-down-950: color-mix(in srgb, var(--txt-clr), var(--down-clr) 95%);
+
+    --acc-clr: color-mix(in srgb, var(--accent-base), var(--down-clr) 50%);
+    --acc-0: var(--acc-clr);
+    --acc-up-0: var(--acc-clr);
+    --acc-down-0: var(--acc-clr);
+
+    --acc-up-50: color-mix(in srgb, var(--acc-clr), var(--up-clr) 5%);
+    --acc-up-100: color-mix(in srgb, var(--acc-clr), var(--up-clr) 10%);
+    --acc-up-150: color-mix(in srgb, var(--acc-clr), var(--up-clr) 15%);
+    --acc-up-200: color-mix(in srgb, var(--acc-clr), var(--up-clr) 20%);
+    --acc-up-250: color-mix(in srgb, var(--acc-clr), var(--up-clr) 25%);
+    --acc-up-300: color-mix(in srgb, var(--acc-clr), var(--up-clr) 30%);
+    --acc-up-350: color-mix(in srgb, var(--acc-clr), var(--up-clr) 35%);
+    --acc-up-400: color-mix(in srgb, var(--acc-clr), var(--up-clr) 40%);
+    --acc-up-450: color-mix(in srgb, var(--acc-clr), var(--up-clr) 45%);
+    --acc-up-500: color-mix(in srgb, var(--acc-clr), var(--up-clr) 50%);
+    --acc-up-550: color-mix(in srgb, var(--acc-clr), var(--up-clr) 55%);
+    --acc-up-600: color-mix(in srgb, var(--acc-clr), var(--up-clr) 60%);
+    --acc-up-650: color-mix(in srgb, var(--acc-clr), var(--up-clr) 65%);
+    --acc-up-700: color-mix(in srgb, var(--acc-clr), var(--up-clr) 70%);
+    --acc-up-750: color-mix(in srgb, var(--acc-clr), var(--up-clr) 75%);
+    --acc-up-800: color-mix(in srgb, var(--acc-clr), var(--up-clr) 80%);
+    --acc-up-850: color-mix(in srgb, var(--acc-clr), var(--up-clr) 85%);
+    --acc-up-900: color-mix(in srgb, var(--acc-clr), var(--up-clr) 90%);
+    --acc-up-950: color-mix(in srgb, var(--acc-clr), var(--up-clr) 95%);
+
+    --acc-down-50: color-mix(in srgb, var(--acc-clr), var(--down-clr) 5%);
+    --acc-down-100: color-mix(in srgb, var(--acc-clr), var(--down-clr) 10%);
+    --acc-down-150: color-mix(in srgb, var(--acc-clr), var(--down-clr) 15%);
+    --acc-down-200: color-mix(in srgb, var(--acc-clr), var(--down-clr) 20%);
+    --acc-down-250: color-mix(in srgb, var(--acc-clr), var(--down-clr) 25%);
+    --acc-down-300: color-mix(in srgb, var(--acc-clr), var(--down-clr) 30%);
+    --acc-down-350: color-mix(in srgb, var(--acc-clr), var(--down-clr) 35%);
+    --acc-down-400: color-mix(in srgb, var(--acc-clr), var(--down-clr) 40%);
+    --acc-down-450: color-mix(in srgb, var(--acc-clr), var(--down-clr) 45%);
+    --acc-down-500: color-mix(in srgb, var(--acc-clr), var(--down-clr) 50%);
+    --acc-down-550: color-mix(in srgb, var(--acc-clr), var(--down-clr) 55%);
+    --acc-down-600: color-mix(in srgb, var(--acc-clr), var(--down-clr) 60%);
+    --acc-down-650: color-mix(in srgb, var(--acc-clr), var(--down-clr) 65%);
+    --acc-down-700: color-mix(in srgb, var(--acc-clr), var(--down-clr) 70%);
+    --acc-down-750: color-mix(in srgb, var(--acc-clr), var(--down-clr) 75%);
+    --acc-down-800: color-mix(in srgb, var(--acc-clr), var(--down-clr) 80%);
+    --acc-down-850: color-mix(in srgb, var(--acc-clr), var(--down-clr) 85%);
+    --acc-down-900: color-mix(in srgb, var(--acc-clr), var(--down-clr) 90%);
+    --acc-down-950: color-mix(in srgb, var(--acc-clr), var(--down-clr) 95%);
+
+
+    --acc-up-50: color-mix(in srgb, var(--accent-base), var(--up-clr) 5%);
+    --acc-up-100: color-mix(in srgb, var(--accent-base), var(--up-clr) 10%);
+    --acc-up-150: color-mix(in srgb, var(--accent-base), var(--up-clr) 15%);
+    --acc-up-200: color-mix(in srgb, var(--accent-base), var(--up-clr) 20%);
+    --acc-up-250: color-mix(in srgb, var(--accent-base), var(--up-clr) 25%);
+    --acc-up-300: color-mix(in srgb, var(--accent-base), var(--up-clr) 30%);
+    --acc-up-350: color-mix(in srgb, var(--accent-base), var(--up-clr) 35%);
+    --acc-up-400: color-mix(in srgb, var(--accent-base), var(--up-clr) 40%);
+    --acc-up-450: color-mix(in srgb, var(--accent-base), var(--up-clr) 45%);
+    --acc-up-500: color-mix(in srgb, var(--accent-base), var(--up-clr) 50%);
+    --acc-up-550: color-mix(in srgb, var(--accent-base), var(--up-clr) 55%);
+    --acc-up-600: color-mix(in srgb, var(--accent-base), var(--up-clr) 60%);
+    --acc-up-650: color-mix(in srgb, var(--accent-base), var(--up-clr) 65%);
+    --acc-up-700: color-mix(in srgb, var(--accent-base), var(--up-clr) 70%);
+    --acc-up-750: color-mix(in srgb, var(--accent-base), var(--up-clr) 75%);
+    --acc-up-800: color-mix(in srgb, var(--accent-base), var(--up-clr) 80%);
+    --acc-up-850: color-mix(in srgb, var(--accent-base), var(--up-clr) 85%);
+    --acc-up-900: color-mix(in srgb, var(--accent-base), var(--up-clr) 90%);
+    --acc-up-950: color-mix(in srgb, var(--accent-base), var(--up-clr) 95%);
+
+    --comp-clr: color-mix(in srgb, var(--complement), var(--down-clr) 5%);
+
+    --comp-up-50: color-mix(in srgb, var(--comp-clr), var(--up-clr) 5%);
+    --comp-up-100: color-mix(in srgb, var(--comp-clr), var(--up-clr) 10%);
+    --comp-up-150: color-mix(in srgb, var(--comp-clr), var(--up-clr) 15%);
+    --comp-up-200: color-mix(in srgb, var(--comp-clr), var(--up-clr) 20%);
+    --comp-up-250: color-mix(in srgb, var(--comp-clr), var(--up-clr) 25%);
+    --comp-up-300: color-mix(in srgb, var(--comp-clr), var(--up-clr) 30%);
+    --comp-up-350: color-mix(in srgb, var(--comp-clr), var(--up-clr) 35%);
+    --comp-up-400: color-mix(in srgb, var(--comp-clr), var(--up-clr) 40%);
+    --comp-up-450: color-mix(in srgb, var(--comp-clr), var(--up-clr) 45%);
+    --comp-up-500: color-mix(in srgb, var(--comp-clr), var(--up-clr) 50%);
+    --comp-up-550: color-mix(in srgb, var(--comp-clr), var(--up-clr) 55%);
+    --comp-up-600: color-mix(in srgb, var(--comp-clr), var(--up-clr) 60%);
+    --comp-up-650: color-mix(in srgb, var(--comp-clr), var(--up-clr) 65%);
+    --comp-up-700: color-mix(in srgb, var(--comp-clr), var(--up-clr) 70%);
+    --comp-up-750: color-mix(in srgb, var(--comp-clr), var(--up-clr) 75%);
+    --comp-up-800: color-mix(in srgb, var(--comp-clr), var(--up-clr) 80%);
+    --comp-up-850: color-mix(in srgb, var(--comp-clr), var(--up-clr) 85%);
+    --comp-up-900: color-mix(in srgb, var(--comp-clr), var(--up-clr) 90%);
+    --comp-up-950: color-mix(in srgb, var(--comp-clr), var(--up-clr) 95%);
+
+    --comp-down-50: color-mix(in srgb, var(--comp-clr), var(--down-clr) 5%);
+    --comp-down-100: color-mix(in srgb, var(--comp-clr), var(--down-clr) 10%);
+    --comp-down-150: color-mix(in srgb, var(--comp-clr), var(--down-clr) 15%);
+    --comp-down-200: color-mix(in srgb, var(--comp-clr), var(--down-clr) 20%);
+    --comp-down-250: color-mix(in srgb, var(--comp-clr), var(--down-clr) 25%);
+    --comp-down-300: color-mix(in srgb, var(--comp-clr), var(--down-clr) 30%);
+    --comp-down-350: color-mix(in srgb, var(--comp-clr), var(--down-clr) 35%);
+    --comp-down-400: color-mix(in srgb, var(--comp-clr), var(--down-clr) 40%);
+    --comp-down-450: color-mix(in srgb, var(--comp-clr), var(--down-clr) 45%);
+    --comp-down-500: color-mix(in srgb, var(--comp-clr), var(--down-clr) 50%);
+    --comp-down-550: color-mix(in srgb, var(--comp-clr), var(--down-clr) 55%);
+    --comp-down-600: color-mix(in srgb, var(--comp-clr), var(--down-clr) 60%);
+    --comp-down-650: color-mix(in srgb, var(--comp-clr), var(--down-clr) 65%);
+    --comp-down-700: color-mix(in srgb, var(--comp-clr), var(--down-clr) 70%);
+    --comp-down-750: color-mix(in srgb, var(--comp-clr), var(--down-clr) 75%);
+    --comp-down-800: color-mix(in srgb, var(--comp-clr), var(--down-clr) 80%);
+    --comp-down-850: color-mix(in srgb, var(--comp-clr), var(--down-clr) 85%);
+    --comp-down-900: color-mix(in srgb, var(--comp-clr), var(--down-clr) 90%);
+    --comp-down-950: color-mix(in srgb, var(--comp-clr), var(--down-clr) 95%);
+
+    --warn-clr: color-mix(in srgb, var(--roman-red), var(--down-clr) 5%);
+
+    --warn-down-50: color-mix(in srgb, var(--warn-clr), var(--down-clr) 5%);
+    --warn-down-100: color-mix(in srgb, var(--warn-clr), var(--down-clr) 10%);
+    --warn-down-150: color-mix(in srgb, var(--warn-clr), var(--down-clr) 15%);
+    --warn-down-200: color-mix(in srgb, var(--warn-clr), var(--down-clr) 20%);
+    --warn-down-250: color-mix(in srgb, var(--warn-clr), var(--down-clr) 25%);
+    --warn-down-300: color-mix(in srgb, var(--warn-clr), var(--down-clr) 30%);
+    --warn-down-350: color-mix(in srgb, var(--warn-clr), var(--down-clr) 35%);
+    --warn-down-400: color-mix(in srgb, var(--warn-clr), var(--down-clr) 40%);
+    --warn-down-450: color-mix(in srgb, var(--warn-clr), var(--down-clr) 45%);
+    --warn-down-500: color-mix(in srgb, var(--warn-clr), var(--down-clr) 50%);
+    --warn-down-550: color-mix(in srgb, var(--warn-clr), var(--down-clr) 55%);
+    --warn-down-600: color-mix(in srgb, var(--warn-clr), var(--down-clr) 60%);
+    --warn-down-650: color-mix(in srgb, var(--warn-clr), var(--down-clr) 65%);
+    --warn-down-700: color-mix(in srgb, var(--warn-clr), var(--down-clr) 70%);
+    --warn-down-750: color-mix(in srgb, var(--warn-clr), var(--down-clr) 75%);
+    --warn-down-800: color-mix(in srgb, var(--warn-clr), var(--down-clr) 80%);
+    --warn-down-850: color-mix(in srgb, var(--warn-clr), var(--down-clr) 85%);
+    --warn-down-900: color-mix(in srgb, var(--warn-clr), var(--down-clr) 90%);
+    --warn-down-950: color-mix(in srgb, var(--warn-clr), var(--down-clr) 95%);
+
+    --warn-up-50: color-mix(in srgb, var(--warn-clr), var(--up-clr) 5%);
+    --warn-up-100: color-mix(in srgb, var(--warn-clr), var(--up-clr) 10%);
+    --warn-up-150: color-mix(in srgb, var(--warn-clr), var(--up-clr) 15%);
+    --warn-up-200: color-mix(in srgb, var(--warn-clr), var(--up-clr) 20%);
+    --warn-up-250: color-mix(in srgb, var(--warn-clr), var(--up-clr) 25%);
+    --warn-up-300: color-mix(in srgb, var(--warn-clr), var(--up-clr) 30%);
+    --warn-up-350: color-mix(in srgb, var(--warn-clr), var(--up-clr) 35%);
+    --warn-up-400: color-mix(in srgb, var(--warn-clr), var(--up-clr) 40%);
+    --warn-up-450: color-mix(in srgb, var(--warn-clr), var(--up-clr) 45%);
+    --warn-up-500: color-mix(in srgb, var(--warn-clr), var(--up-clr) 50%);
+    --warn-up-550: color-mix(in srgb, var(--warn-clr), var(--up-clr) 55%);
+    --warn-up-600: color-mix(in srgb, var(--warn-clr), var(--up-clr) 60%);
+    --warn-up-650: color-mix(in srgb, var(--warn-clr), var(--up-clr) 65%);
+    --warn-up-700: color-mix(in srgb, var(--warn-clr), var(--up-clr) 70%);
+    --warn-up-750: color-mix(in srgb, var(--warn-clr), var(--up-clr) 75%);
+    --warn-up-800: color-mix(in srgb, var(--warn-clr), var(--up-clr) 80%);
+    --warn-up-850: color-mix(in srgb, var(--warn-clr), var(--up-clr) 85%);
+    --warn-up-900: color-mix(in srgb, var(--warn-clr), var(--up-clr) 90%);
+    --warn-up-950: color-mix(in srgb, var(--warn-clr), var(--up-clr) 95%);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --up-clr: black;
+        --down-clr: white;
+        --complement: var(--denim);
+        --accent-base: var(--tangerine);
+        --txt-clr: var(--black);
+        --brightness-vector: -0.3;
+    }
+}

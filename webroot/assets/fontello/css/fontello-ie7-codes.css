@@ -1,0 +1,2 @@
+
+.icon-spread { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf527;&nbsp;'); }

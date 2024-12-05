@@ -1,0 +1,74 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.NoBrowser": true,
+		"liveServer.settings.root": "/webroot",
+		"liveSassCompile.settings.forceBaseDirectory": "/webroot",
+	},
+	"launch": {
+		"configurations": [
+			{
+				"type": "chrome",
+				"request": "launch",
+				"name": "run-debug",
+				"url": "http://localhost:5500",
+				"webRoot": "${workspaceFolder}/webroot",
+				"preLaunchTask": "run-dev",
+				"postDebugTask": "end-dev"
+			}
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "start-live-server",
+				"command": "${command:extension.liveServer.goOnline}",
+				"problemMatcher": []
+			},
+			{
+				"label": "start-sass-watch",
+				"command": "${command:liveSass.command.watchMySass}",
+				"problemMatcher": []
+			},
+			{
+				"label": "run-dev",
+				"dependsOn": [
+					"start-sass-watch",
+					"start-live-server"
+				],
+				"presentation": {
+					"echo": false,
+					"reveal": "silent",
+					"revealProblems": "onProblem",
+					"focus": false,
+					"panel": "dedicated",
+					"showReuseMessage": true,
+					"clear": false,
+					"close": true
+				},
+				"problemMatcher": []
+			},
+			{
+				"label": "stop-live-server",
+				"command": "${command:extension.liveServer.goOffline}",
+				"problemMatcher": []
+			},
+			{
+				"label": "stop-sass-watch",
+				"command": "${command:liveSass.command.donotWatchMySass}",
+			},
+			{
+				"label": "end-dev",
+				"dependsOn": [
+					"stop-live-server",
+					"stop-sass-watch",
+				],
+			}
+		]
+	}
+}

@@ -1,0 +1,195 @@
+:root {
+    background-color: var(--acc-down-400);
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--txt-clr);
+    --link-txt-clr: var(--acc-up-700);
+}
+
+// * {
+//     outline: 1px solid yellow;
+// }
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    color: var(--acc-up-500)
+}
+
+hr {
+    border-color: var(--comp-up-100);
+    width: 80%;
+    height: 0px;
+}
+
+a {
+    --link-font-size: 1.1em;
+    text-decoration: none;
+    color: var(--link-txt-clr);
+    text-wrap: nowrap;
+    justify-content: center;
+    display: flex;
+}
+
+.content {
+    box-sizing: border-box;
+    // height: min-content;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 0.5em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        color: var(--comp-up-250);
+        font-family: "MuseoModerno", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: min(15vw, 120px);
+        max-width: 100%;
+    }
+
+    .links-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+
+        a {
+            font-size: var(--link-font-size);
+            border-radius: 10px;
+            padding: 0.25em 0.5em;
+            transition: all 0.1s ease;
+
+            svg,
+            img,
+            i {
+                height: var(--link-font-size);
+                font-size: calc(1.3 * var(--link-font-size));
+                // aspect-ratio: 1;
+                margin: 0 0.4em;
+                fill: var(--link-txt-clr);
+                transition: all 75ms ease-in-out;
+                // transform: translate(0, 0.1em);
+            }
+        }
+
+        a:hover {
+            background-color: var(--comp-down-200);
+            --link-font-size: 1.18em;
+        }
+
+        &.socials {
+            .link-box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 2em;
+                width: 3em;
+
+                span {
+                    opacity: 0;
+                    // transform: translate(0, 2em);
+                    font-size: 0.8em;
+                    position: absolute;
+                    transition: all 0.1s ease-in-out;
+                    z-index: -1;
+                }
+
+                a:hover {
+
+                    span {
+                        // transform: translate(0, 1.8em);
+                        opacity: 1;
+                        transform: translateY(2.5rem);
+                    }
+                }
+            }
+        }
+
+        &.projects {
+
+            .link-box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 2.5em;
+                width: 10em;
+
+                --link-txt-clr: var(--acc-down-800);
+
+                a {
+                    color: var(--link-txt-clr);
+                    --link-font-size: 0.9em;
+                    background-color: var(--acc-up-700);
+                }
+
+                a:hover {
+                    margin: 0;
+                    background-color: var(--comp-up-250);
+                    font-size: 1em;
+                }
+            }
+        }
+
+    }
+
+}
+
+.canvas-container {
+    width: 116vw;
+    height: 116vh;
+    position: fixed;
+    z-index: -1;
+    overflow: hidden;
+    top: -8%;
+    left: -8%;
+
+    canvas {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        /* position: absolute; */
+        /* z-index: 0; */
+        /* top: 0; */
+        /* left: 0; */
+        opacity: 0.7;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body {}
+}
